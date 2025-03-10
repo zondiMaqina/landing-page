@@ -49,5 +49,16 @@ On future projects, I plan on continuing to build webpages or websites starting 
 
 ### Useful resources
 
+> [!NOTE]
+> Because i could not find the social media icons to add for footer, i looked up some icons i could replace hem with.
+
+[Favicon](https://www.flaticon.com) => This is where i found the icons for the social media links the credit goes to the author
+
+- twitter-icon => by [Bogdan Rosu](https://www.flaticon.com/free-icons/twitter)
+
+- facebook icon => by [High uality Icons](https://www.flaticon.com/free-icons/facebook)
+
+- instagram icon => by [Freepik](https://www.flaticon.com/free-icons/instagram-logo)
+
 ## Author
 ## Acknowledgements
