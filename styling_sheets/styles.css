@@ -1,0 +1,83 @@
+/* 1 => Remove default browser styles and add some opinionated styles for browser compatability*/
+
+/* 2 => apply downloaded font*/
+
+@import url('normalize.css'); /* 1 */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: fylo-font;
+  src: url(Raleway/Raleway-VariableFont_wght.ttf);
+} /* 2 */
+
+.navigation, ul{
+  display: flex;
+}
+
+.navigation img{
+  width: clamp(100px, 100px + 2vw, 200px);
+}
+
+.navigation{
+  justify-content: space-between;
+  padding: calc(1rem + 1vw);
+  align-items: center;
+  font-family: fylo-font, sans-serif;
+}
+
+ul{
+  list-style-type: none;
+  gap: calc(1rem + 0.5vh);
+}
+
+.content-intro{
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+.context-intro figure{
+  max-inline-size: 100%;
+}
+
+.content-intro figure img{
+  max-inline-size: 100%;
+}
+
+.content-intro article h2{
+  font-family: fylo-font, sans;
+  text-align: center;
+  line-height: max(2.5rem, 2vh);
+  font-size: 2rem;
+  margin: clamp(20px, 2rem - 1vw, 30px);
+}
+
+.content-intro article p{
+  margin: clamp(20px, 2rem - 1vw, 30px);
+  font-family: fylo-font, sans;
+  text-align: center;
+}
+
+.content-intro .search-bar{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 30px;
+}
+
+.content-intro .search-bar input{
+  flex-basis: 35px;
+}
+
+.further-details{
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+.further-details figure,.further-details figure img{
+  max-inline-size: 100%;
+}
