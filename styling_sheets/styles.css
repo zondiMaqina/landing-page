@@ -56,8 +56,7 @@ ul{
   margin: clamp(20px, 2rem - 1vw, 30px);
 }
 
-.content-intro article p{
-  margin: clamp(20px, 2rem - 1vw, 30px);
+.content-intro article p, .further-details article .service-description{
   font-family: fylo-font, sans;
   text-align: center;
 }
@@ -78,6 +77,79 @@ ul{
   flex-flow: column-reverse;
 }
 
+.service{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: clamp(20px, 2rem - 1vw, 30px);
+}
+
 .further-details figure,.further-details figure img{
   max-inline-size: 100%;
+}
+
+.further-details .service-description p{
+  text-align: start;
+  margin-bottom: 20px;
+  line-height: calc(20px + 2vh);
+}
+
+.service-description h2{
+  margin-bottom: 20px;
+}
+
+.testimonial{
+  border: 1px solid;
+  font-family: system-ui, sans-serif;
+  padding: 20px;
+  max-width: 350px;
+  align-self: center;
+  border-radius: 10px;
+}
+
+.testimonial .comment{
+  line-height: 20px;
+  font-family: sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.testimonial .user-info img{
+  max-width: clamp(50px, 50px + 2vw, 150px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50% ;
+}
+
+.testimonial .user-info{
+  margin-top: 10px;
+}
+
+.content-footer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-family: fylo-font, sans-serif;
+  margin-bottom: 10px;
+}
+
+.content-footer div p{
+  max-inline-size: 60%;
+  margin: 0 auto;
+  line-height: calc(16px + 2vh);
+}
+
+.content-footer form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 0 50px;
+}
+
+.content-footer form input{
+  height: 40px;
 }
