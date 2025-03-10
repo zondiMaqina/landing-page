@@ -50,7 +50,7 @@ On future projects, I plan on continuing to build webpages or websites starting 
 ### Useful resources
 
 > [!NOTE]
-> Because i could not find the social media icons to add for footer, i looked up some icons i could replace hem with.
+> Because i could not find the social media icons to add for footer, i looked up some icons i could replacethem with in png format
 
 [Favicon](https://www.flaticon.com) => This is where i found the icons for the social media links the credit goes to the author
 
