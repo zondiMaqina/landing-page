@@ -32,6 +32,7 @@ I must program a webpage whereby the users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Vector Graphics (SVG)
 
 ### What I learnt
 
@@ -43,9 +44,20 @@ Since this is my first time designing a webpage with a device-first aproach, thi
 
 - [x] for `<a>` elements it is important to include the `` attribute
 
+- [x] To make the icons colors switch roles where black is white and vice versa
+
+I use the `filter` property whereby:  `.icon{filter: brghtness(0) invert(1)}`
+
+```
+img{
+  max-inline-size: 100%
+}
+```
+This ensures that the image does not overflow on viewport width when `writing-mode` => horizontal
+
 ### Continued development
 
-On future projects, I plan on continuing to build webpages or websites starting from the mobile view then to desktop
+On future projects, I plan on continuing to build webpages or websites starting from the mobile view then to desktop, as it makes the content much more appealing on devices also in laptop as well
 
 ### Useful resources
 
