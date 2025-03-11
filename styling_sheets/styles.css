@@ -4,160 +4,10 @@
 
 @import url('normalize.css'); /* 1 */
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 @font-face{
   font-family: fylo-font;
   src: url(Raleway/Raleway-VariableFont_wght.ttf);
 } /* 2 */
-
-.navigation, ul{
-  display: flex;
-}
-
-.navigation img{
-  width: clamp(100px, 100px + 2vw, 200px);
-}
-
-.navigation{
-  justify-content: space-between;
-  padding: calc(1rem + 1vw);
-  align-items: center;
-  font-family: fylo-font, sans-serif;
-}
-
-ul{
-  list-style-type: none;
-  gap: calc(1rem + 0.5vh);
-}
-
-.content-intro{
-  display: flex;
-  flex-flow: column-reverse nowrap;
-}
-
-.context-intro figure{
-  max-inline-size: 100%;
-}
-
-.content-intro figure img{
-  max-inline-size: 100%;
-}
-
-.content-intro article h2{
-  font-family: fylo-font, sans;
-  text-align: center;
-  line-height: max(2.5rem, 2vh);
-  font-size: 2rem;
-  margin: clamp(20px, 2rem - 1vw, 30px);
-}
-
-.content-intro article p, .further-details article .service-description{
-  font-family: fylo-font, sans;
-  text-align: center;
-}
-
-.content-intro .search-bar{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 0 30px;
-}
-
-.content-intro .search-bar input{
-  flex-basis: 35px;
-}
-
-.further-details{
-  display: flex;
-  flex-flow: column-reverse;
-}
-
-.service{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin: clamp(20px, 2rem - 1vw, 30px);
-}
-
-.further-details figure,.further-details figure img{
-  max-inline-size: 100%;
-}
-
-.further-details .service-description p{
-  text-align: start;
-  margin-bottom: 20px;
-  line-height: calc(20px + 2vh);
-}
-
-.service-description h2{
-  margin-bottom: 20px;
-}
-
-.testimonial{
-  border: 1px solid;
-  font-family: system-ui, sans-serif;
-  padding: 20px;
-  max-width: 350px;
-  align-self: center;
-  border-radius: 10px;
-}
-
-.testimonial .comment{
-  line-height: 20px;
-  font-family: sans-serif;
-  letter-spacing: 0.8px;
-}
-
-.testimonial .user-info img{
-  max-width: clamp(50px, 50px + 2vw, 150px);
-  aspect-ratio: 1 / 1;
-  border-radius: 50% ;
-}
-
-.testimonial .user-info{
-  margin-top: 10px;
-}
-
-.content-footer{
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  text-align: center;
-  padding: 40px 0;
-}
-
-h3{
-  font-size: 1.5rem;
-  font-family: fylo-font, sans-serif;
-  margin-bottom: 10px;
-}
-
-.content-footer div p{
-  max-inline-size: 60%;
-  margin: 0 auto;
-  line-height: calc(16px + 2vh);
-}
-
-.content-footer form{
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  padding: 0 50px;
-}
-
-.content-footer form input{
-  height: 40px;
-}
-/* 1 => Remove default browser styles and add some opinionated styles for browser compatability*/
-
-/* 2 => apply downloaded font*/
-
-@import url('normalize.css'); /* 1 */
 
 *{
   padding: 0;
@@ -165,17 +15,12 @@ h3{
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-family: fylo-font, sans-serif;
 }
-
-@font-face{
-  font-family: fylo-font;
-  src: url(Raleway/Raleway-VariableFont_wght.ttf);
-} /* 2 */
 
 body{
   min-height: 100vh;
 }
-
 
 .navigation, ul{
   display: flex;
@@ -189,7 +34,6 @@ body{
   justify-content: space-between;
   padding: calc(1rem + 1vw);
   align-items: center;
-  font-family: fylo-font, sans-serif;
 }
 
 ul{
@@ -201,16 +45,12 @@ ul{
   flex-flow: column-reverse nowrap;
 }
 
-.context-intro figure{
+.context-intro figure, .content-intro img{
   max-inline-size: 100%;
 }
 
-.content-intro figure img{
-  max-inline-size: 100%;
-}
 
 .content-intro article h2{
-  font-family: fylo-font, sans;
   text-align: center;
   line-height: max(2.5rem, 2vh);
   font-size: 2rem;
@@ -219,7 +59,6 @@ ul{
 }
 
 .content-intro article p, .further-details article .service-description{
-  font-family: fylo-font, sans;
   text-align: center;
 }
 
@@ -244,7 +83,6 @@ ul{
 
 .content-intro .search-bar input:nth-child(2), .content-footer form input:nth-child(2){
   display: block;
-  font-family: fylo-font, sans-serif;
   background-color: hsl(224, 93%, 58%);
   color: white;
   border: none;
@@ -361,8 +199,7 @@ footer{
   flex-direction: column;
   row-gap: 35px;
   font-family: sans-serif;
-  padding-left: 40px;
-  padding-top: 50px;
+  padding: 50px 0 10px 40px;
   background-color: hsl(243, 87%, 12%);
 }
 
@@ -385,7 +222,7 @@ footer .contact-details{
 }
 
 footer ul{
-  display: lex;
+  display: flex;
   flex-direction: column;
 }
 
