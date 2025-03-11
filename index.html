@@ -29,8 +29,9 @@
         <p class="service-summary">
           Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family and co-workers.
         </p>
-        <form action="none"  class="search-bar">
-          <input type="text" id="email" name="email" placeholder="Enter your email...">
+        <form action=""  class="search-bar">
+          <input type="email" id="email" name="email" placeholder="Enter your email..." required minlength="5"
+          oninvalid="this.setCustomValidity('Email Address not valid')">
           <input type="submit" value="Get Started">
         </form>
       </article>
@@ -77,8 +78,8 @@
         </p>
       </div>
 
-      <form action="none">
-        <input type="text" id="email" name="email">
+      <form action="">
+        <input type="email" id="email" name="email" placeholder="  email@example.com" oninvalid="this.setCustonValidity('Email not valid')" minlength="5">
         <input type="submit" value="Get Started For Free">
       </form>
     </article>

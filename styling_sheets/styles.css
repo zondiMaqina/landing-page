@@ -116,7 +116,7 @@ ul{
 .further-details .service-description p{
   text-align: start;
   margin-bottom: 20px;
-  line-height: calc(20px + 2vh);
+  line-height: calc(15px + 2vh);
 }
 
 .service-description h2{
@@ -194,6 +194,11 @@ h3{
 
 .content-footer form input{
   height: 40px;
+}
+
+input::placeholder{
+  font-family: fylo-font, sans-serif;
+  color: grey;
 }
 
 footer{
