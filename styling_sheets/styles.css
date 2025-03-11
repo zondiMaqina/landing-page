@@ -231,10 +231,9 @@ footer .social-media{
   column-gap: 15px;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 800px){
   .content-intro{
     flex-direction: row;
-    border: 1px solid;
     padding: 0 20px;
     margin: 0 clamp(20px, 2rem - 1vw, 30px);
   }
@@ -305,11 +304,22 @@ footer .social-media{
   }
 
   main .content-footer form{
-    flex-grow: 2;
+    flex-basis: 500px;
+    display: flex;
+    flex-flow: column nowrap;
   }
 
   main .content-footer form input:nth-child(2){
     display: block;
-    width: 50%;
+    max-width: 200px;
+    font-size: 16px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
   }
 }
