@@ -54,7 +54,6 @@ ul{
   text-align: center;
   line-height: max(2.5rem, 2vh);
   font-size: 2rem;
-  margin: clamp(20px, 2rem - 1vw, 30px);
   color: hsl(238, 22%, 44%);
 }
 
@@ -70,7 +69,6 @@ ul{
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 0 30px;
   margin-top: 20px;
 }
 
@@ -89,6 +87,7 @@ ul{
   font-size: 16px;
   font-weight: 600;
 }
+
 
 .further-details{
   display: flex;
@@ -127,7 +126,6 @@ ul{
   max-width: 350px;
   align-self: center;
   border-radius: 10px;
-  background-color: hsl(240, 75%, 98%);
 }
 
 .testimonial .comment{
@@ -173,7 +171,7 @@ h3{
 }
 
 .content-footer div p{
-  max-inline-size: 60%;
+  text-align: center;
   margin: 0 auto;
   line-height: calc(16px + 2vh);
 }
@@ -231,4 +229,87 @@ footer .social-media{
   filter: brightness(0) invert(1);
   justify-content: center;
   column-gap: 15px;
+}
+
+@media screen and (min-width: 600px){
+  .content-intro{
+    flex-direction: row;
+    border: 1px solid;
+    padding: 0 20px;
+    margin: 0 clamp(20px, 2rem - 1vw, 30px);
+  }
+
+  .content-intro article{
+    align-self: center;
+  }
+
+  .content-intro article h2{
+    text-align: start;
+  }
+  
+  .content-intro article .service-summary{
+    text-align: start;
+  }
+
+  .content-intro article{
+    display: flex;
+    flex-flow: column;
+    row-gap: 5px;
+  }
+
+  .content-intro article .search-bar{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content-intro article .search-bar input:first-child{
+    flex-grow: 2;
+  }
+
+  .content-intro article .search-bar input:nth-child(2){
+    flex-grow: 1;
+  }
+
+  .further-details{
+    flex-direction: row;
+  }
+
+  .further-details .service .testimonial{
+    align-self: start;
+  }
+
+  .content-footer{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .additional-feature, h3{
+    text-align: start;
+    padding: 0;
+  }
+
+  .content-footer div p{
+    text-align: start;
+    margin: 0;
+  }
+
+  .content-footer{
+    display: flex;
+    flex-direction: row nowrap;
+    column-gap: 100px;
+  }
+
+  main .content-footer div{
+    flex-basis: 600px;
+    padding: 0 0 0 20px;
+  }
+
+  main .content-footer form{
+    flex-grow: 2;
+  }
+
+  main .content-footer form input:nth-child(2){
+    display: block;
+    width: 50%;
+  }
 }
