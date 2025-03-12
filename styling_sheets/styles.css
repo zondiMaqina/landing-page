@@ -69,7 +69,7 @@ ul{
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .content-intro .search-bar input{
@@ -92,6 +92,10 @@ ul{
 .further-details{
   display: flex;
   flex-flow: column-reverse;
+  background-image: url(../images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
 
 .service{
@@ -126,6 +130,7 @@ ul{
   max-width: 350px;
   align-self: center;
   border-radius: 10px;
+  background-color: white;
 }
 
 .testimonial .comment{
@@ -259,6 +264,7 @@ footer .social-media{
   .content-intro article .search-bar{
     display: flex;
     flex-direction: row;
+    margin: 10px 10px 0 0;
   }
 
   .content-intro article .search-bar input:first-child{
@@ -271,6 +277,9 @@ footer .social-media{
 
   .further-details{
     flex-direction: row;
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .further-details .service .testimonial{

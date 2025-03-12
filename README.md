@@ -57,7 +57,15 @@ This ensures that the image does not overflow on viewport width when `writing-mo
 
 ### Continued development
 
-On future projects, I plan on continuing to build webpages or websites starting from the mobile view then to desktop, as it makes the content much more appealing on devices also in laptop as well
+1. On future projects, I plan on continuing to build webpages or websites starting from the mobile-screen size then to bigger screens, as it makes the content much more appealing on devices also on larger screens as well
+
+2. Typography is another important part of a webpage or website, as it is what users will pay more attention to. So applying responsiveness to Typography as well is important (line-height, font-size, font)
+
+  - I have seen that using CSS Functions for this makes it much easier to control the view of my text 
+  - calc(x + y) / calc(x - y) => readjusts size of property as screen gows or decreases
+  - clamp(x, v, y) => sets limits to the growth and shrinkage of property
+
+One other thing i have noticed it is quite important to use relative css units for typography (vw, vh, rem) as it contributes to responsiveness designing
 
 ### Useful resources
 
@@ -73,4 +81,8 @@ On future projects, I plan on continuing to build webpages or websites starting 
 - instagram icon => by [Freepik](https://www.flaticon.com/free-icons/instagram-logo)
 
 ## Author
+This webpage was created by [Zondi Maqina](https:github.com/zondiMaqina)
+
 ## Acknowledgements
+
+Thanks to *Favicon* i was able to add the icons for footer,
