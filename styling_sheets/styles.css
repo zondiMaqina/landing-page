@@ -57,6 +57,10 @@ ul{
   color: hsl(238, 22%, 44%);
 }
 
+.content-intro article h2, .content-intro article p.service-summary{
+  margin: 5px calc(5px + 1vw);
+}
+
 .content-intro article p, .further-details article .service-description{
   text-align: center;
 }
@@ -165,7 +169,7 @@ ul{
   flex-direction: column;
   row-gap: 20px;
   text-align: center;
-  padding: 40px 0;
+  padding: 40px calc(5px + 1vw);
   background-color: hsl(0, 0%, 75%);
 }
 
@@ -217,6 +221,7 @@ footer .contact-details img{
 .contact-details img[alt="website logo"]{
   width: clamp(100px, 160px + 2vw, 200px);
 }
+
 
 footer .contact-details{
   display: flex;
