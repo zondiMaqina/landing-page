@@ -81,6 +81,20 @@ ul{
   border-radius: 5px;
   padding: 10px;
   border: 1px solid grey;
+  padding: 0 5px;
+}
+
+input[type="submit"]:hover{
+  filter: opacity(80%);
+  cursor: pointer;
+}
+
+input[type="submit"]:active{
+  filter: opacity(100);
+}
+
+input[type="email"]:focus{
+  outline: none;
 }
 
 .content-intro .search-bar input:nth-child(2), .content-footer form input:nth-child(2){
@@ -194,6 +208,7 @@ h3{
 
 .content-footer form input{
   height: 40px;
+  padding: 0 5px;
 }
 
 input::placeholder{
